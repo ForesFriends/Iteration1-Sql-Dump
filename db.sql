@@ -54,4 +54,13 @@ show tables;
 
 commit;
 
+LOAD DATA Local INFILE 'filename.csv' INTO TABLE table_name
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '/n'
+IGNORE NUMBER {LINES | ROWS};
+
+COMMIT;
+
+
+
 
